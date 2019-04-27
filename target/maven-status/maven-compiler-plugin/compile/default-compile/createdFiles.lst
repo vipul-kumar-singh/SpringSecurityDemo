@@ -1,0 +1,3 @@
+com\vkstech\springsecurity\demo\config\MySpringMvcDispatcherServletInitializer.class
+com\vkstech\springsecurity\demo\config\DemoAppConfig.class
+com\vkstech\springsecurity\demo\controller\DemoController.class
