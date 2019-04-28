@@ -12,7 +12,7 @@
 </head>
 <body>
     <h2>
-        VKS-Tech Company Home Page
+        VKS-Tech Company Home Page -- Yoohoo!!!
     </h2>
     <hr>
         Welcome to my world...!!!
