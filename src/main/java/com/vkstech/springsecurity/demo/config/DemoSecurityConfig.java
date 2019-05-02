@@ -38,7 +38,9 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 					.formLogin() // customising form login page
 						.loginPage("/showMyLoginPage") // show our custom form at the request mapping "/showMyLoginPage"
 						.loginProcessingUrl("/authenticateTheUser") // Login form should POST data to this URL for processing (check username and password)
-					.permitAll(); // allow everyone to see login page 
+					.permitAll() // allow everyone to see login page
+				.and()
+					.logout().permitAll(); //adds logout support
 
 	}
 
