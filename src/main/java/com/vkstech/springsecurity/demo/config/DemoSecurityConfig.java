@@ -24,8 +24,8 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		auth.inMemoryAuthentication()
 				.withUser(users.username("john").password(encoder.encode("test123")).roles("EMPLOYEE"))
-				.withUser(users.username("mary").password(encoder.encode("test123")).roles("MANAGER"))
-				.withUser(users.username("susan").password(encoder.encode("test123")).roles("ADMIN"));
+				.withUser(users.username("mary").password(encoder.encode("test123")).roles("EMPLOYEE","MANAGER"))
+				.withUser(users.username("susan").password(encoder.encode("test123")).roles("EMPLOYEE","ADMIN"));
 	}
 
 	// configure security of web paths in application, login, logout etc
